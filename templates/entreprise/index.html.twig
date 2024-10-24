@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}liste des entreprise!{% endblock %}
+
+{% block body %}
+
+<h1> liste des entreprises: </h1>
+
+{% for entreprise in entreprises %}
+    <a>{{ entreprise.id }}) <a href="/entreprise/{{entreprise.id}}/employes">{{ entreprise.nom }}</p>
+    <br>
+{% endfor %}
+{% endblock %}

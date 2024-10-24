@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un employe!{% endblock %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+        {{ form_label(form.nom, "Nom de lemploye")}}
+        {{ form_label(form.age, "Age de lemploye")}}
+        {{ form_label(form.email, "Email de lemploye")}}
+        {{ form_label(form.entreprise, "Entreprise de lemploye")}}
+    {{ form_end(form)}}
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste employes!{% endblock %}
+{% for employe in employes %}
+    <p>{{ employe.nom }}</p>
+    <br>
+{% endfor %}
+
+

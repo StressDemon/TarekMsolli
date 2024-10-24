@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une entreprise!{% endblock %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+        {{ form_label(form.nom, "Nom de lentreprise")}}
+    {{ form_end(form)}}
+    <br>
+
+{% endblock %}
